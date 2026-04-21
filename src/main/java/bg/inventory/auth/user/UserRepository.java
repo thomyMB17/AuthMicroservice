@@ -1,4 +1,4 @@
-package bg.inventory.auth.User;
+package bg.inventory.auth.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

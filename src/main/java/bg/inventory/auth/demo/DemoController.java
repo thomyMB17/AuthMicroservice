@@ -1,4 +1,4 @@
-package bg.inventory.auth.Demo;
+package bg.inventory.auth.demo;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;

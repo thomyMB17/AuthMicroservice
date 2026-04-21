@@ -1,9 +1,9 @@
-package bg.inventory.auth.Auth;
+package bg.inventory.auth.auth;
 
-import bg.inventory.auth.Jwt.JwtService;
-import bg.inventory.auth.User.Role;
-import bg.inventory.auth.User.User;
-import bg.inventory.auth.User.UserRepository;
+import bg.inventory.auth.jwt.JwtService;
+import bg.inventory.auth.user.Role;
+import bg.inventory.auth.user.User;
+import bg.inventory.auth.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

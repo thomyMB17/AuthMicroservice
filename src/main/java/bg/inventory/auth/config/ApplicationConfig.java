@@ -1,6 +1,6 @@
-package bg.inventory.auth.Config;
+package bg.inventory.auth.config;
 
-import bg.inventory.auth.User.UserRepository;
+import bg.inventory.auth.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

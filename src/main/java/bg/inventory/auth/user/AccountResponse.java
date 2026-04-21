@@ -1,4 +1,4 @@
-package bg.inventory.auth.User;
+package bg.inventory.auth.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
