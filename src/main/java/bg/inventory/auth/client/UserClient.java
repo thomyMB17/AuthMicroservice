@@ -1,9 +1,9 @@
 package bg.inventory.auth.client;
 
 
-import bg.inventory.auth.auth.RegisterRequest;
+import bg.inventory.auth.dto.request.RegisterRequest;
+import bg.inventory.auth.dto.response.UserClientResponse;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
@@ -25,7 +25,7 @@ public class UserClient {
 
     public void createUser(RegisterRequest request){
         restClient.post()
-                .uri("/users")
+                .uri("/api/v1/users")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(request)
                 .header("X-Internal-Key", apiKey)
@@ -33,9 +33,9 @@ public class UserClient {
                 .toBodilessEntity();
     }
 
-    public UserClientResponse getUserByUsername(String username){
+    public UserClientResponse getUserByEmail(String email){
         return restClient.get()
-                .uri("/users/{username}", username)
+                .uri("/api/v1/users/internal/email/{email}", email)
                 .header("X-Internal-Key", apiKey)
                 .retrieve()
                 .body(UserClientResponse.class);

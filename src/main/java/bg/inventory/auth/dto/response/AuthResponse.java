@@ -1,4 +1,4 @@
-package bg.inventory.auth.auth;
+package bg.inventory.auth.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginRequest {
-    String username;
-    String password;
+public class AuthResponse {
+    String token;
 }
